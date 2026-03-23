@@ -12,4 +12,10 @@ class Guerrier : Personnage
         base.Afficher();
         Console.WriteLine($"Force: {force}");
     }   
+
+    //Ajout d'un constructeur de la classe mere avec base
+    public Guerrier(string nom, int pointsDeVie, int Attributs) : base(nom, pointsDeVie, Attributs)
+    {
+        this.force = 0;
+    }
 }

@@ -12,4 +12,10 @@ class Magicien : Personnage
         base.Afficher();
         Console.WriteLine($"Puissance Magique: {puissanceMagique}");
     }
+
+    //Ajout d'un constructeur de la classe mere avec base
+    public Magicien(string nom, int pointsDeVie, int Attributs) : base(nom, pointsDeVie, Attributs)
+    {
+        this.puissanceMagique = 0;
+    }
 }
