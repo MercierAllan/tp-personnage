@@ -1,21 +1,16 @@
 class Guerrier : Personnage
 {
-    private int force;
+    private int armure;
 
-    public Guerrier(string nom, int pointsDeVie, int Attributs, int force) : base(nom, pointsDeVie, Attributs)
+    public Guerrier(string nom, int pointsDeVie, int armure)
+        : base(nom, pointsDeVie)
     {
-        this.force = force;
+        this.armure = armure;
     }
 
-    public new void Afficher()
+    public override void Afficher()
     {
         base.Afficher();
-        Console.WriteLine($"Force: {force}");
-    }   
-
-    //Ajout d'un constructeur de la classe mere avec base
-    public Guerrier(string nom, int pointsDeVie, int Attributs) : base(nom, pointsDeVie, Attributs)
-    {
-        this.force = 0;
+        Console.WriteLine($"Armure: {armure}");
     }
 }
