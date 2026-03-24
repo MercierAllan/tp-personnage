@@ -20,10 +20,6 @@ class Program
         Guerrier g1 = new Guerrier("Lancelot", 120, 30);
         Magicien m1 = new Magicien("Merlin", 80, 50);
 
-        g1.Afficher();
-        m1.Afficher();
-        g1.Attaquer();
-        m1.LancerSort();
         
         List<Personnage> personnages = new List<Personnage>();
         personnages.Add(g1);
@@ -32,8 +28,15 @@ class Program
         for (int i = 0; i < personnages.Count; i++)
         {
             personnages[i].Afficher();
-            p1.Attaquer();
-            m1.LancerSort();
+            
+            if (personnages[i] is Guerrier)
+            {
+                ((Guerrier)personnages[i]).Attaquer();
+            }
+            else if (personnages[i] is Magicien)
+            {
+                ((Magicien)personnages[i]).LancerSort();
+            }
         }
     }
 }
