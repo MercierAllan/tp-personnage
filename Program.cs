@@ -32,6 +32,8 @@ class Program
         for (int i = 0; i < personnages.Count; i++)
         {
             personnages[i].Afficher();
+            p1.Attaquer();
+            m1.LancerSort();
         }
     }
 }
