@@ -7,8 +7,14 @@ class Program
         Personnage p1 = new Personnage("Arthur", 100);
         p1.Afficher();
 
-        Console.WriteLine("Arthur subit 20 dégâts");
-        p1.RecevoirDegats(20);
+        Console.WriteLine("Sans réduction : ");
+        Console.WriteLine("Arthur subit 30 dégâts");
+        p1.RecevoirDegats(30);
+        p1.Afficher();
+
+        Console.WriteLine("Avec réduction : ");
+        Console.WriteLine("Arthur subit 30 dégâts avec une réduction de 10");
+        p1.RecevoirDegats(30, 10);
         p1.Afficher();
 
         Guerrier g1 = new Guerrier("Lancelot", 120, 30);
@@ -16,5 +22,6 @@ class Program
 
         g1.Afficher();
         m1.Afficher();
+        
     }
 }

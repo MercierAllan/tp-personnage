@@ -10,7 +10,6 @@ class Magicien : Personnage
 
     public override void Afficher()
     {
-        base.Afficher();
-        Console.WriteLine($"Puissance magique: {puissanceMagique}");
+        Console.WriteLine($"Magicien : {nom}, PV : {pointsDeVie}, Puissance magique : {puissanceMagique}");
     }
 }
