@@ -25,5 +25,13 @@ class Program
         g1.Attaquer();
         m1.LancerSort();
         
+        List<Personnage> personnages = new List<Personnage>();
+        personnages.Add(g1);
+        personnages.Add(m1);
+
+        for (int i = 0; i < personnages.Count; i++)
+        {
+            personnages[i].Afficher();
+        }
     }
 }
