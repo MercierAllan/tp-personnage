@@ -17,4 +17,9 @@ class Guerrier : Personnage
     {
         Console.WriteLine($"{nom} attaque");
     }
+
+    public override string ToString()
+    {
+        return $"Guerrier : {nom}, PV : {pointsDeVie}, Armure : {armure}";
+    }
 }

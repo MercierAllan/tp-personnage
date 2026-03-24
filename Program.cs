@@ -19,7 +19,8 @@ class Program
 
         Guerrier g1 = new Guerrier("Lancelot", 120, 30);
         Magicien m1 = new Magicien("Merlin", 80, 50);
-
+        Console.WriteLine(g1);
+        Console.WriteLine(m1);
         
         List<Personnage> personnages = new List<Personnage>();
         personnages.Add(g1);

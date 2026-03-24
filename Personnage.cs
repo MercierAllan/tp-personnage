@@ -31,4 +31,9 @@ class Personnage
     {
         Console.WriteLine($"{nom}, Points de Vie: {pointsDeVie}");
     }
+
+    public override string ToString()
+    {
+        return $"{nom}, Points de Vie: {pointsDeVie}";
+    }
 }
