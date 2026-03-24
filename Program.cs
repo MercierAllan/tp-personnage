@@ -22,22 +22,29 @@ class Program
         Console.WriteLine(g1);
         Console.WriteLine(m1);
         
+        Archer a1 = new Archer("Robin", 90, 75);
         List<Personnage> personnages = new List<Personnage>();
         personnages.Add(g1);
         personnages.Add(m1);
+        personnages.Add(a1);
 
-        for (int i = 0; i < personnages.Count; i++)
+        foreach (Personnage p in personnages)
         {
-            personnages[i].Afficher();
-            
-            if (personnages[i] is Guerrier)
+            p.Afficher();
+
+            if (p is Guerrier guerrier)
             {
-                ((Guerrier)personnages[i]).Attaquer();
+                ((Guerrier)p).Attaquer();
             }
-            else if (personnages[i] is Magicien)
+            else if (p is Magicien magicien)
             {
-                ((Magicien)personnages[i]).LancerSort();
+                magicien.LancerSort();
             }
+            else if (p is Archer archer)
+            {
+                archer.Tirer();
+            }
+
         }
     }
 }
