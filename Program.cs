@@ -22,6 +22,8 @@ class Program
 
         g1.Afficher();
         m1.Afficher();
+        g1.Attaquer();
+        m1.LancerSort();
         
     }
 }

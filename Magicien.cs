@@ -12,4 +12,9 @@ class Magicien : Personnage
     {
         Console.WriteLine($"Magicien : {nom}, PV : {pointsDeVie}, Puissance magique : {puissanceMagique}");
     }
+
+    public void LancerSort()
+    {
+        Console.WriteLine($"{nom} lance un sort");
+    }
 }
